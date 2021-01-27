@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
     <script src="./pacientes.js"></script>
     <script src="./config.js"></script>
     <meta charset="UTF-8">
@@ -14,14 +16,27 @@
         <button onclick="start()">Start</button>
     </div>
 
-    <div>
-        <table id="tabela">
-            <tr>
-                <td>Nome</td>
-                <td></td>
-                <td>Status</td>
-                
-            </tr>
+    <hr>
+
+    <div class="table-responsive" style="margin: 10px;">
+
+
+        <table class="table table-hover">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col">Nome</th>
+                    <th scope="col">Alfaepoetina</th>
+                    <th scope="col">Sacarato</th>
+                    <th scope="col">Paricalcitol</th>
+                    <th scope="col">Cinacalcete</th>
+                    <th scope="col">Sevelamer</th>
+                    <th scope="col">Calcitriol</th>
+                </tr>
+            </thead>
+            <tbody id="dados">
+
+            </tbody>
+            
             
         </table>
     </div>
